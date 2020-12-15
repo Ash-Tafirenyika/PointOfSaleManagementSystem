@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="PointOfSalePU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>PosClient.User</class>
+    <class>PosClient.TimeZoneName</class>
+    <class>PosClient.Db</class>
+    <class>PosClient.ColumnStats</class>
+    <class>PosClient.InnodbTableStats</class>
+    <class>PosClient.HelpKeyword</class>
+    <class>PosClient.TableStats</class>
+    <class>PosClient.Plugin</class>
+    <class>PosClient.ProxiesPriv</class>
+    <class>PosClient.GlobalPriv</class>
+    <class>PosClient.GtidSlavePos</class>
+    <class>PosClient.HelpTopic</class>
+    <class>PosClient.TimeZoneLeapSecond</class>
+    <class>PosClient.Proc</class>
+    <class>PosClient.Func</class>
+    <class>PosClient.InnodbIndexStats</class>
+    <class>PosClient.Servers</class>
+    <class>PosClient.HelpCategory</class>
+    <class>PosClient.IndexStats</class>
+    <class>PosClient.TimeZoneTransition</class>
+    <class>PosClient.TablesPriv</class>
+    <class>PosClient.TimeZoneTransitionType</class>
+    <class>PosClient.TransactionRegistry</class>
+    <class>PosClient.ProcsPriv</class>
+    <class>PosClient.ColumnsPriv</class>
+    <class>PosClient.HelpRelation</class>
+    <class>PosClient.Event</class>
+    <class>PosClient.TimeZone</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mysql?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>
